@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    height: 50px;
+    background-color: black;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+nav .container {
+    height: 100%;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+nav p {
+    width: 70%;
+}
+
+.colorText {
+    color: #52bb9f;
+    font-weight: bold;
+}
+
+nav ul {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-dropdown {
+    position: absolute;
+    display: none;
+    top: 55px;
+    left: -60px;
+    /*display: block;*/
+    background-color: black;
+    width: 200px;
+    z-index: 5;
+}
+
+.menu-dropdown:before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    height: 30px;
+    width: 30px;
+}
+
+.menu-dropdown li {
+    display: block;
+    padding: 15px;
+
+}
+
+header {
+    height: 500px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(187, 187, 187, 1) 100%);
+}
+
+header .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+header .container:after {
+    content: '>';
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 70px;
+    transform: translateY(-100%);
+    color: #52bb9f;
+    cursor: pointer;
+
+}
+
+header .container:before {
+    content: '<';
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 70px;
+    transform: translateY(-100%);
+    color: #52bb9f;
+    cursor: pointer;
+}
+
+.header-description {
+    padding: 0 100px 0 0;
+    text-align: center;
+}
+
+.header-description h1 {
+    font-weight: normal;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.header-description button {
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    background-color: #52bb9f;
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+    outline: 0;
+}
+
+.header-description button:hover {
+    color: #52bb9f;
+    background-color: white;
+    transition: background-color .5s, color .5s;
+
+}
