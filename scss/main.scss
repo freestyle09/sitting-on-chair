@@ -1,0 +1,78 @@
+@import "modules/variables";
+@import "partials/header";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font-open;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.logo-green {
+  font-weight: bold;
+  color: $font-color;
+}
+
+#chairs {
+  height: 300px;
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    .box {
+      position: relative;
+      margin: 40px 0 60px 0;
+      border: 1px solid $border-color;
+      width: 32%;
+      height: fit-content;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        vertical-align: bottom;
+      }
+      .hover-text {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        background-color: $bgColorHover;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        opacity: 1;
+        visibility: visible;
+        transition: .5s ease-in-out;
+        h2 {
+          font: {
+            size: 18px;
+            weight: 600;
+          }
+          margin-left: 20px;
+          border-bottom: 8px solid $font-color;
+          width: 170px;
+        }
+      }
+    }
+    .text {
+      padding: 20px;
+      font-size: 14px;
+      color: $font-text-color;
+      h2 {
+        width: 150px;
+        font-size: 18px;
+        color: $bgColor;
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+        border-bottom: 8px solid $font-color;
+      }
+    }
+  }
+}

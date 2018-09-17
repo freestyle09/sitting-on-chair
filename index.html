@@ -3,172 +3,97 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Sitting on chair</title>
-		<link rel="stylesheet" href="css/css.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/app.js" defer></script>
 	</head>
 	<body>
-		<nav>
-			<div class="container">
-				<p>Sit <span class="colorText">on</span> chair </p>
-				<ul>
-					<li><a href="#"> O firmie </a>
-						<ul class="menu-dropdown">
-							<li><a href="#">Aktualności</a></li>
-							<li><a href="#">Nasz team</a></li>
-							<li><a href="#">Historia</a></li>
-						</ul>
-					</li>
-					<li><a href="#"> Galeria </a></li>
-					<li><a href="#"> Kontakt </a></li>
-				</ul>
-			</div>
-		</nav>
 		<header>
-			<div class="container">
-				<button class="rightArrow">&gt;</button>
-				
-				<div class="image">
-					<img src="images/black_chair.png" alt="">
-				</div>
-				<div class="header-description">
-					
-					<h1>Sit <span class="colorText"> on </span> our <span class="colorText">chair</span></h1>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias iste modi quis quod tempora.
-						Aliquam, aliquid beatae ducimus ea, eaque est ex expedita illo officia sapiente temporibus unde
-						voluptas voluptatibus!
-					</p>
-					<button>Zobacz więcej</button>
-				</div>
-				<button class="leftArrow">&lt;</button>
-			</div>
-		</header>
-		
-		<section id="chairs">
-			<div class="container">
-				<div><img src="images/box1_img.jpg" alt="">
-					<span>Chair CLAIR</span>
-				</div>
-				<div><img src="images/box2_img.jpg" alt="">
-					<span>Chair MARGARITA</span>
-				</div>
-				<div>
-					<h2>Finds all inputs</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus deleniti dignissimos dolor
-						earum fuga fugit, harum illo ipsa iure labore laudantium maiores officiis pariatur quam,
-						quibusdam ratione rem tempore temporibus.<br/><br/>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					</p>
-				</div>
-			</div>
-		</section>
-		<section id="price">
-			<div class="container">
-				<h2>Cennik</h2>
-				<div class="prices-columns">
-					<div>
-						<p>Basic plan</p>
-						<div class="price-box">
-							<p>85<span>99</span><br/>
-								
-								<span class="currency">PLN/MSC</span>
-							
-							</p>
-						</div>
-						<div class="price-info">
-							<p>Zakupy towaru + dowóz</p>
-							<p>Serwis</p>
-						</div>
-						<div>
-							<button>Dołącz</button>
-						</div>
-					</div>
-					
-					<div>
-						<p id="price-title">Standard plan</p>
-						<div class="price-box">
-							<p>95<span>99</span><br/>
-								
-								<span class="currency">PLN/MSC</span>
-							
-							</p>
-						</div>
-						<div class="price-info">
-							<p>Zakupy towaru + dowóz</p>
-							<p>Serwis</p>
-							<p>Gwarancja 5 lat</p>
-						</div>
-						<div>
-							<button>Dołącz</button>
-						</div>
-					</div>
-					
-					<div>
-						<p>Advance plan</p>
-						<div class="price-box">
-							<p>211 <span>00</span><br/>
-								
-								<span class="currency">PLN/MSC</span>
-							
-							</p>
-						</div>
-						<div class="price-info">
-							<p>Zakupy towaru + dowóz</p>
-							<p>Serwis</p>
-							<p>Gwarancja 6 lat</p>
-							<p>Porady projektanta</p>
-						</div>
-						<div>
-							<button>Dołącz</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<footer>
-			<div class="container">
-				<h2>Kontakt</h2>
-			</div>
-			<form action="">
-				
+			<nav>
 				<div class="container">
-					<div class="form">
-						<input type="text" placeholder="Imię">
-						<input type="email" placeholder="email">
-						<textarea cols="30" rows="10" placeholder="Wiadomość"></textarea>
+					<div class="logo">
+						Sit <span class="logo-green">on</span> chair
 					</div>
-					<div class="footer-image">
+					<ul class="menu">
+						<li class="dropdown-item"><a href="#">O Firmie</a>
+							<ul class="dropdown">
+								<div class="triangle"></div>
+								<li><a href="#">Aktualności</a></li>
+								<li><a href="#">Nasz team</a></li>
+								<li><a href="#">Historia</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Galeria</a></li>
+						<li><a href="#">Kontakt</a></li>
+					</ul>
+				</div>
+			</nav>
+			<section id="sit-on-our-chair">
+				<div class="container">
+					<button class="slider-button left">&lt;</button>
+					<button class="slider-button right">&gt;</button>
+					
+					<div class="slider active">
+						<img src="images/black_chair.png" alt="">
+						<div class="slider-text">
+							<h1>Sit <span class="logo-green">on</span> our <span class="logo-green">Chair</span></h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus et ipsam rem
+								repellendus vitae. Consectetur ex ipsa ipsum repellendus sed. Amet architecto beatae
+								blanditiis cum dolor eum ex excepturi exercitationem.</p>
+							<button class="button">Zobacz więcej</button>
+						</div>
+					</div>
+					<div class="slider">
+						<img src="images/orange_chair.png" alt="">
+						<div class="slider-text">
+							<h1>Sit <span class="logo-green">on</span> our <span class="logo-green">Orange Chair</span>
+							</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus et ipsam rem
+								repellendus vitae. Consectetur ex ipsa ipsum repellendus sed. Amet architecto beatae
+								blanditiis cum dolor eum ex excepturi exercitationem.</p>
+							<button class="button">Zobacz więcej</button>
+						</div>
+					</div>
+					<div class="slider">
 						<img src="images/red_chair.png" alt="">
-						<label>
-							<input type="checkbox" class="checkbox">
-							Zgadzam się na przetwarzanie danych osobowych
-						</label>
-						<button>Wyślij</button>
-					</div>
-				</div>
-			</form>
-			<div class="container">
-				<div class="flex">
-					<div class="copyright">
-						Copyright 2014 &copy; | All Rights Reserved. - Sit on Chair
-					</div>
-					<div class="images">
-						<div>
-							<img src="images/flickr.png" alt="">
-							<img src="images/vimeo.png" alt="">
-							<img src="images/pinterest.png" alt="">
-							<img src="images/twitter.png" alt="">
-						</div>
-						<div>
-							Sit <span class="colorText"> on </span> Chair
-						
+						<div class="slider-text">
+							<h1>Sit <span class="logo-green">on</span> our <span class="logo-green">Red Chair</span>
+							</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus et ipsam rem
+								repellendus vitae. Consectetur ex ipsa ipsum repellendus sed. Amet architecto beatae
+								blanditiis cum dolor eum ex excepturi exercitationem.</p>
+							<button class="button">Zobacz więcej</button>
 						</div>
 					</div>
+				
 				</div>
-			
-			
-			</div>
-		</footer>
+			</section>
+		</header>
+		<main>
+			<section id="chairs">
+				<div class="container">
+					<div class="box">
+						<img src="images/box1_img.jpg" alt="">
+						<div class="hover-text">
+							<h2>Chair CLAIR</h2>
+						</div>
+					</div>
+					<div class="box">
+						<img src="images/box2_img.jpg" alt="">
+						<div class="hover-text">
+							<h2>Chair MARGARITA</h2>
+						</div>
+					</div>
+					<div class="box text">
+						<h2>Find all inputs</h2>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto culpa dignissimos
+						dolorem ducimus earum error est eveniet ipsa laboriosam magni mollitia nihil numquam obcaecati
+						odit perferendis placeat quas, quibusdam quis quisquam, quod rem repellat reprehenderit saepe
+						similique sunt suscipit tempora temporibus totam vitae. Aliquam, consectetur cumque nulla
+						pariatur quas saepe similique! Dicta, dolore molestias.
+					</div>
+				</div>
+			</section>
+		
+		</main>
 	</body>
 </html>
