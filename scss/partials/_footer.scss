@@ -1,0 +1,104 @@
+
+#form {
+  height: 500px;
+  margin-top: 60px;
+
+  .flex-header {
+    display: flex;
+    justify-content: space-between;
+    .h2:nth-child(2) {
+      text-align: right;
+    }
+  }
+  form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  .form-box {
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    //border: 2px solid red;
+    //background-color: $bgColor-box;
+    &:first-child {
+      //justify-content: flex-start;
+      flex-direction: column;
+      justify-content: space-between;
+      select {
+        background-color: $bgColor-box;
+        width: 100%;
+        border: 2px solid $font-color;
+        margin: 10px 0;
+        color: $color-font-box;
+        font: {
+          weight: 300;
+          size: 22px;
+        }
+      }
+      label {
+        font-size: 22px;
+      }
+    }
+    .image {
+      width: 100%;
+      max-height: 200px;
+      object-fit: contain;
+    }
+    &:last-of-type {
+      justify-content: space-between;
+      background-color: $bgColor-box;
+      flex-wrap: wrap;
+      padding: 10px;
+      .chairs {
+        width: 70%;
+        height: 70%;
+        border-right: 2px solid $color-white;
+        > span {
+          display: block;
+        }
+      }
+      .price-chairs {
+        width: 30%;
+        text-align: right;
+        height: 70%;
+        > span {
+          display: block;
+        }
+      }
+      .total-price {
+        padding-top: 10px;
+        border-top: 2px solid $color-white;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+  }
+
+  .button-form {
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    bottom: -80px;
+    right: 50px;
+    border: 0;
+    font: {
+      size: 26px;
+      weight: 300;
+    }
+    text-transform: uppercase;
+    background-color: $font-color;
+    color: $color-white;
+    border-radius: 10px;
+    transition: .5s;
+    &[disabled] {
+      color: $font-color;
+      background-color: $color-white;
+      border: 2px solid $font-color;
+    }
+  }
+
+}

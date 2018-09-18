@@ -96,57 +96,123 @@
 		</main>
 		<section id="price">
 			<div class="container">
-				<div class="price-box">
-					<h3 class="h3">Basic Plan</h3>
-					<div class="box-price">
-						<p>
-							<span class="price">85 <sup>99</sup></span>
-							<br>
-							PLN / MSC
-						</p>
+				<h2 class="h2">Cennik</h2>
+				<div class="flex">
+					<div class="price-box">
+						<h3 class="h3">Basic Plan</h3>
+						<div class="box-price">
+							<p>
+								<span class="price">85 <sup>99</sup></span>
+								<br>
+								PLN / MSC
+							</p>
+						</div>
+						<div class="box-description">
+							<p>
+								Zakup towaru + dowóz
+							</p>
+							<p>Serwis</p>
+						</div>
+						<button class="box-button">Dołącz</button>
 					</div>
-					<div class="box-description">
-						<p>
-							Zakup towaru + dowóz
-						</p>
-						<p>Serwis</p>
+					<div class="price-box second-box">
+						<h3 class="h3 second-h3">Standard Plan</h3>
+						<div class="box-price second-box-price">
+							<p>
+								<span class="price">95 <sup>99</sup></span>
+								<br>
+								PLN / MSC
+							</p>
+						</div>
+						<div class="box-description second-box-description">
+							<p>Zakup towaru + dowóz</p>
+							<p>Serwis</p>
+							<p>Gwarancja 5 lat</p>
+						</div>
+						<button class="box-button second-box-button">Dołącz</button>
 					</div>
-					<button class="box-button">Dołącz</button>
-				</div>
-				<div class="price-box second-box">
-					<h3 class="h3 second-h3">Standard Plan</h3>
-					<div class="box-price second-box-price">
-						<p>
-							<span class="price">95 <sup>99</sup></span>
-							<br>
-							PLN / MSC
-						</p>
+					<div class="price-box">
+						<h3 class="h3">Advanced Plan</h3>
+						<div class="box-price">
+							<p>
+								<span class="price">211 <sup>00</sup></span>
+								<br>
+								PLN / MSC
+							</p>
+						</div>
+						<div class="box-description">
+							<p>Zakup towaru + dowóz</p>
+							<p>Serwis</p>
+							<p>Gwarancja 6 lat</p>
+							<p>Porady projektanta</p>
+						</div>
+						<button class="box-button">Dołącz</button>
 					</div>
-					<div class="box-description second-box-description">
-						<p>Zakup towaru + dowóz</p>
-						<p>Serwis</p>
-						<p>Gwarancja 5 lat</p>
-					</div>
-					<button class="box-button second-box-button">Dołącz</button>
-				</div>
-				<div class="price-box">
-					<h3 class="h3">Advanced Plan</h3>
-					<div class="box-price">
-						<p>
-							<span class="price">211 <sup>00</sup></span>
-							<br>
-							PLN / MSC
-						</p>
-					</div>
-					<div class="box-description">
-						<p>Zakup towaru + dowóz</p>
-						<p>Serwis</p>
-						<p>Gwarancja 6 lat</p>
-						<p>Porady projektanta</p>
-					</div>
-					<button class="box-button">Dołącz</button>
 				</div>
 			</div>
 		</section>
+		
+		<footer id="form">
+			
+			<div class="container">
+				<div class="flex-header">
+					<h2 class="h2">Skomponuj Swoje Krzesło</h2>
+					<h2 class="h2">Podsumowanie</h2>
+				</div>
+				<form action="">
+					<div class="form-box">
+						<select name="type" id="type">
+							<option value="" disabled selected>Wybierz rodzaj</option>
+							<option value="Chair Clair" data-price="200">Chair Clair</option>
+							<option value="Chair Margarita" data-price="300">Chair Margarita</option>
+							<option value="Chair Selena" data-price="260">Chair Selena</option>
+						</select>
+						<select name="color" id="color">
+							<option value="" disabled selected>Wybierz kolor</option>
+							<option value="red" hidden>Czerwony</option>
+							<option value="black" hidden>Czarny</option>
+							<option value="orange" hidden>Pomarańczowy</option>
+						</select>
+						<select name="material" id="material">
+							<option value="" disabled selected>Wybierz materiał</option>
+							<option value="Tkanina" data-price="80" hidden>Tkanina</option>
+							<option value="Skóra" data-price="160" hidden>Skóra</option>
+						</select>
+						<label>
+							Transport
+							<input type="checkbox" data-price="80">
+						</label>
+					</div>
+					<div class="form-box">
+						<img class="image" src="" alt="">
+					</div>
+					<div class="form-box">
+						<div class="chairs">
+							<span class="chair-product"></span>
+							<span class="chair-material"></span>
+							<span class="chair-transport"></span>
+						
+						</div>
+						<div class="price-chairs">
+							<span class="chair"></span>
+							<span class="transport"></span>
+							<span class="material"></span>
+						</div>
+						<div class="total-price">
+							<div>Suma</div>
+							<div><span class="sum">0</span> zł</div>
+						</div>
+					
+					</div>
+					<button class="button-form" type="submit">
+						Zamawiam
+					</button>
+				</form>
+			
+			</div>
+		
+		</footer>
+	
+	
 	</body>
 </html>

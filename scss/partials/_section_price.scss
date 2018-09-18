@@ -1,0 +1,167 @@
+
+#price {
+  background-color: $bgColor-section;
+  .container {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-content: space-between;
+    .flex {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .price-box {
+    position: relative;
+    border: 2px solid $border-color;
+    width: 32%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: $bgColor-box;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 0;
+      transform: translateY(-70%);
+      border-radius: 100%;
+      border: 2px solid $color-box;
+      background-color: $color-white;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: 0;
+      transform: translateY(-90%);
+      border-radius: 100%;
+      border: none;
+      background-color: $color-dot;
+    }
+    &.second-box {
+      background-color: $font-color;
+      border: 2px solid $font-color;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 0;
+        transform: translateY(-70%);
+        border-radius: 100%;
+        border: 2px solid $font-color;
+        background-color: $font-color;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 0;
+        transform: translateY(-90%);
+        border-radius: 100%;
+        border: none;
+        background-color: $color-white;
+      }
+    }
+    .h3 {
+      text-transform: uppercase;
+      color: $font-color;
+      padding: 30px 0;
+      font: {
+        size: 28px;
+        weight: 400;
+      }
+      &.second-h3 {
+        color: $color-white
+      }
+    }
+    .box-price {
+      height: 150px;
+      width: 150px;
+      margin-bottom: 50px;
+      background-color: $color-white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-radius: 100%;
+      border: 2px solid $border-color;
+      font: {
+        size: 18px;
+        family: $font-merri;
+        weight: bold;
+      }
+      color: $color-price;
+      &.second-box-price {
+        color: $font-color;
+        border: 2px solid $font-color;
+
+      }
+
+      .price {
+        font-size: 48px;
+        letter-spacing: -1px;
+        font-family: $font-merri;
+
+        sup {
+          font-size: 26px;
+          font-family: $font-merri;
+          margin-left: -10px;
+        }
+      }
+    }
+    .box-description {
+      width: 100%;
+      text-align: center;
+      p {
+        padding: 8px 3px;
+        color: $color-font-box;
+        font: {
+          size: 22px;
+          family: $font-open;
+          weight: 300;
+        }
+      }
+      p:nth-child(2n + 1) {
+        background-color: $color-box;
+      }
+      p:nth-child(2n + 2) {
+        background-color: $bgColor-section;
+      }
+
+      &.second-box-description {
+        p:nth-child(2n + 1) {
+          background-color: $color-white;
+        }
+      }
+    }
+    .box-button {
+      position: absolute;
+      left: 50%;
+      bottom: 20px;
+      transform: translateX(-50%);
+      background-color: $font-color;
+      padding: 10px 30px;
+      color: $color-white;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: 300;
+      border-radius: 10px;
+      &.second-box-button {
+        color: $font-color;
+        background-color: $color-white;
+      }
+    }
+  }
+
+}

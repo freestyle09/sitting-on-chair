@@ -61,7 +61,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // hover item
 
     const box = document.querySelectorAll('.box:not(.text)');
-    // const textHover = document.querySelector('.hover-text');
 
     for (let el of box) {
         el.addEventListener('mouseenter', function () {
@@ -78,5 +77,78 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
 
+    // Order
 
-})
+    const form = document.querySelector('form');
+    const chairs = document.querySelector('select[name="type"]');
+    const colors = document.querySelector('select[name="color"]');
+    const material = document.querySelector('select[name="material"]');
+    const transport = document.querySelector('input[type="checkbox"]');
+    const priceTransport = document.querySelector('.transport');
+    const priceChairs = document.querySelector('.chair');
+    const chairProduct = document.querySelector('.chair-product');
+    const chairTransport = document.querySelector('.chair-transport');
+    const totalSum = document.querySelector('.sum');
+    const image = document.querySelector('.image');
+    const chairMaterialPrice = document.querySelector('.material');
+    const chairMaterial = document.querySelector('.chair-material');
+    const button = document.querySelector('.button-form');
+
+    button.disabled = true;
+
+    form.addEventListener('change', function () {
+        let sum = 0;
+
+        // Chair
+        if (chairs.options.selectedIndex > 0) {
+
+            // Select chair
+            let chair = chairs.options;
+            let chairSelected = chair[chair.selectedIndex];
+
+            chairProduct.textContent = chairSelected.value;
+            priceChairs.textContent = chairSelected.dataset.price;
+            sum += Number(chairSelected.dataset.price);
+
+            // Turn on colors
+            for (let el of colors) {
+                el.hidden = false
+            }
+
+            // Colors
+            if (colors.options.selectedIndex > 0) {
+                image.setAttribute('src', 'images/' + colors[colors.selectedIndex].value + '_chair.png')
+
+                // Turn on material
+                for (let el of material) {
+                    el.hidden = false;
+                }
+            }
+            // Price material
+            if (material.options.selectedIndex > 0) {
+                let materials = material[material.selectedIndex];
+                chairMaterialPrice.textContent = materials.dataset.price;
+                chairMaterial.textContent = materials.value;
+                sum += Number(materials.dataset.price)
+            }
+        }
+
+
+        // Price transport
+        if (transport.checked) {
+            sum += Number(transport.dataset.price);
+            priceTransport.textContent = transport.dataset.price;
+            chairTransport.textContent = 'Transport';
+        } else {
+            priceTransport.textContent = '';
+            chairTransport.textContent = '';
+        }
+
+        totalSum.textContent = String(sum);
+
+        if (chairs.options.selectedIndex > 0 && colors.options.selectedIndex > 0 && material.options.selectedIndex > 0) {
+            button.disabled = false;
+        }
+    })
+
+});
