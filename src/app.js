@@ -1,3 +1,6 @@
+require('../scss/main.scss');
+require('../index.html');
+
 function Slider(selector) {
     this.selector = selector;
     this.sliderImages = document.querySelector(selector);
